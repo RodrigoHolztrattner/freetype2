@@ -228,10 +228,27 @@
     /* nothing */
   }
 
-
 #endif /* !FT_DEBUG_LEVEL_TRACE */
 
 #endif /* FT_DEBUG_LEVEL_ERROR */
 
+#ifndef FT_DEBUG_LEVEL_TRACE
+
+  FT_BASE_DEF(void)
+  FT_Trace_Disable(void)
+  {
+      /* nothing */
+  }
+
+
+  /* documentation is in ftdebug.h */
+
+  FT_BASE_DEF(void)
+  FT_Trace_Enable(void)
+  {
+      /* nothing */
+  }
+
+#endif /* FT_DEBUG_LEVEL_TRACE */
 
 /* END */
